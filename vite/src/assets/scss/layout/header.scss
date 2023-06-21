@@ -1,14 +1,24 @@
 #Header {
-  background-color: #ccc;
+  // background: linear-gradient(180deg, transparent, #ffffffc2);
+  background-size: 200% 100%;
+  animation: blindEffect 10s linear infinite;
+  background-color: #ffe0da2f;
+  backdrop-filter: blur(20px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
 }
 .header__inner {
   display: flex;
   justify-content: space-between;
-  padding: 1% 2%;
+  padding: 1.2% 2%;
   .title {
     width: 50%;
     h3 {
-      font-size: 1.5em;
+      font-size: 1.1em;
+      font-weight: bold;
     }
   }
   .nav {
@@ -17,12 +27,22 @@
       text-align: right;
       > li {
         display: inline;
-        margin-left: 5%;
-        background-color: #fff;
+        margin-left: 10%;
+        // background-color: #ffffff;
         a {
           font-size: 1em;
+          font-weight: 400;
         }
       }
     }
+  }
+}
+
+@keyframes blindEffect {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
   }
 }

@@ -20,6 +20,7 @@ html {
 body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 //공백 초기화
 body,
@@ -102,7 +103,6 @@ button {
   border: 0;
 }
 
-
 // 스크롤바
 /* 스크롤바 트랙 스타일 */
 ::-webkit-scrollbar {
@@ -118,7 +118,7 @@ button {
 
 /* 스크롤바 트랙을 눈에 띄게 표시할 경우 */
 ::-webkit-scrollbar-track {
-  background-color: #D0E0E0; /* 스크롤바 트랙의 배경색 */
+  background-color: #d0e0e0; /* 스크롤바 트랙의 배경색 */
 }
 
 /* 스크롤바 슬라이더를 hover 시 표시할 경우 */
