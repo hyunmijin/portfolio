@@ -1,0 +1,28 @@
+#Header {
+  background-color: #ccc;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 2%;
+  .title {
+    width: 50%;
+    h3 {
+      font-size: 1.5em;
+    }
+  }
+  .nav {
+    width: 50%;
+    > ul {
+      text-align: right;
+      > li {
+        display: inline;
+        margin-left: 5%;
+        background-color: #fff;
+        a {
+          font-size: 1em;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,137 @@
+:root {
+  --color_body: #101010;
+  --bg_seection: #f6f8fd;
+  --button_blue: #4857ec;
+  --button_red: #ff3344;
+  --button_green: #00c183;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  //가로 확대 금지
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+//공백 초기화
+body,
+div,
+dl,
+dd,
+dt,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+p,
+table,
+th,
+td,
+input,
+figure,
+figcaption,
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+body,
+input,
+textarea,
+select,
+button,
+table {
+  color: var(--color_body);
+  font-size: 16px;
+  line-height: 1.4;
+  font-family: "GmarketSans", -apple-system, BlinkMacSystemFont, "Malgun Gothic",
+    "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.4px;
+}
+li,
+ol,
+ul {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+em,
+address {
+  font-style: normal;
+}
+img,
+svg,
+video {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+img,
+fieldset,
+button {
+  border: 0;
+}
+
+
+// 스크롤바
+/* 스크롤바 트랙 스타일 */
+::-webkit-scrollbar {
+  width: 10px; /* 스크롤바의 너비 */
+}
+
+/* 스크롤바 슬라이더 스타일 */
+::-webkit-scrollbar-thumb {
+  background-color: #ff5a91b3; /* 스크롤바 슬라이더의 배경색 */
+  border-radius: 10px; /* 스크롤바 슬라이더의 둥근 모서리 반지름 */
+  padding: 10px;
+}
+
+/* 스크롤바 트랙을 눈에 띄게 표시할 경우 */
+::-webkit-scrollbar-track {
+  background-color: #D0E0E0; /* 스크롤바 트랙의 배경색 */
+}
+
+/* 스크롤바 슬라이더를 hover 시 표시할 경우 */
+::-webkit-scrollbar-thumb:hover {
+  // background-color: #D0E0E0; /* 스크롤바 슬라이더의 배경색 */
+}
+
+/* 수평 스크롤바 스타일 */
+::-webkit-scrollbar-horizontal {
+  height: 3px; /* 수평 스크롤바의 높이 */
+}
+
+/* 수직 스크롤바 스타일 */
+::-webkit-scrollbar-vertical {
+  width: 3px; /* 수직 스크롤바의 너비 */
+}
