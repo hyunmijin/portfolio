@@ -4,11 +4,22 @@
   position: fixed;
   position: relative;
   // background-color: #ccc;
+  .img {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    top: 20vh;
+    left: 35vw;
+    z-index: 100;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    
+  }
   .clip {
     position: absolute;
     width: 20%;
     height: 50px;
-    background-color: #cece;
+    background-color: rgba(220, 245, 220, 0.933);
     left: 0;
     top: -50px;
     border-radius: 0% 20px 0 0;
@@ -20,7 +31,7 @@
 }
 .profile__inner {
   height: 100vh;
-  background-color: #cece;
+  background-color: rgba(220, 245, 220, 0.933);
   border-radius: 0% 2%;
   .text {
     width: 100vw;
@@ -53,6 +64,7 @@
       }
     }
     .text-2 {
+
       // background-color: #ccc;
       // height: 5vh;
       // margin: 10px 0;
@@ -65,23 +77,30 @@
         width: 100%;
       }
     }
+
     .text-3 {
       display: flex;
       justify-content: space-between;
-      padding: 15px 0;
+      padding: 30px 0;
       height: 47vh;
       >div {
         h6 {
           font-size: 1.5em;
-          padding: 20px 0; 
         }
         button {
-          background-color: #fff;
+          margin-top: 30px;
+          background-color: #000000;
+
           border-radius: 30px;
+          width: 250px;
           padding:  15px 35px;
           a {
             font-size: 1.5em;
+            color: #fff;
           }
+        }
+        p {
+          font-size: 1.3em;
         }
       }
     }
