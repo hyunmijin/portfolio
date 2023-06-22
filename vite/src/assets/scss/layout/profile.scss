@@ -1,6 +1,7 @@
 #section3 {
   width: 100vw;
   height: 100vh;
+  position: fixed;
   position: relative;
   // background-color: #ccc;
   .clip {
@@ -22,36 +23,66 @@
   background-color: #cece;
   border-radius: 0% 2%;
   .text {
+    width: 100vw;
     padding: 2%;
     height: 100vh;
     display: block;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     .text-1 {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      justify-content: center;
-      height: 50%;
+      justify-content: space-between;
+      height: 47vh;
       > div:nth-child(1) {
         h3 {
-          font-size: 100px;
+          width: 100%;
+          font-size: 30px;
+          font-weight: bold;
         }
       }
       > div:nth-child(2) {
         h2 {
+        // display: flex;
+        font-size: 6.5rem;
+        margin-left: auto;
+        text-align: end;
+        transform: translateX(calc(95vw - 100%));
         }
       }
     }
     .text-2 {
-      height: 50%;
-      background-color: #ccc;
+      // background-color: #ccc;
+      // height: 5vh;
+      // margin: 10px 0;
       &::before {
         content: "";
         display: block;
-        height: 2px;
+        height: 1.5px;
         background-color: #000;
         margin: 0px auto;
         width: 100%;
+      }
+    }
+    .text-3 {
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 0;
+      height: 47vh;
+      >div {
+        h6 {
+          font-size: 1.5em;
+          padding: 20px 0; 
+        }
+        button {
+          background-color: #fff;
+          border-radius: 30px;
+          padding:  15px 35px;
+          a {
+            font-size: 1.5em;
+          }
+        }
       }
     }
   }
