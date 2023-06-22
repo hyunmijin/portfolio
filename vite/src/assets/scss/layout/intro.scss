@@ -1,66 +1,121 @@
-#intro {
+#section2 {
+  width: 100vw;
+  height: 100vh;
+  background-size: 20px 20px;
+  background-image: repeating-radial-gradient(
+    rgb(236, 234, 234) 0px,
+    rgba(255, 255, 255, 0.74) 2px,
+    rgba(236, 236, 236, 0) 48px
+  );
+  font-family: var(--font-name);
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  background-color: #ffffff;
-  #section2 {
-    width: 60%;
-    // background-color: #ccc;
-    .intro__icon1 {
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      width: 100px;
-      height: 100px;
-      // background-image: url(./assets/images/icon2.png);
-      background-image: url(../assets/images/introImg/icon1.png);
-      transform: rotate(-80deg);
-      background-size: cover;
-      animation: iconAnimation2 2s infinite;
-    }
-    .intro__icon2 {
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100px;
-      height: 100px;
-      background-image: url(../assets/images/introImg/icon2.png);
-      transform: rotate(-0deg);
-      background-size: cover;
-      background-position: center;
-      animation: iconAnimation 2s infinite;
-      // background-color: #ccc;
-    }
-  }
 }
-.intro__inner {
-  //   transform: translate(25%, 50%);
-
-  .text {
-    // background-color: #ccc;
-    position: relative;
-    h6 {
-      font-size: 1.2em;
-      margin-bottom: 2%;
-    }
-    h1 {
-      font-size: 6em;
-      font-weight: bold;
-      em {
-        padding: 1%;
-        background-color: #faffc9;
+#intro {
+  .intro__inner {
+    .img {
+      .animate img {
+        opacity: 1;
+        transform: translateX(0%);
       }
-      span {
-        border: 7px solid #ffc9e2;
-        border-radius: 20px;
-        padding: 0.5%;
+
+      img {
+        width: 20vw;
+        border: 5px solid #fbd429ad;
+        border-radius: 50%;
+
+        position: relative;
+        opacity: 0;
+        transform: translateX(100%);
+        transition: opacity 0.5s, transform 0.5s;
+      }
+    }
+    // background-color: #ccc;
+
+    .text {
+      // background-color: #ccc;
+      position: relative;
+      h6 {
+        font-size: 1.2em;
+        margin-bottom: 2%;
+      }
+      h1 {
+        font-size: 6em;
+        font-weight: bold;
+        em {
+          padding: 1%;
+          background-color: #faffc9;
+        }
+        span {
+          border: 7px solid #ffc9e2;
+          border-radius: 20px;
+          padding: 0.5%;
+        }
       }
     }
   }
-
-  //   background-color: #cedfdf7a;
+  .intro__icon1 {
+    position: absolute;
+    bottom: 20%;
+    width: 100px;
+    height: 100px;
+    // background-image: url(./assets/images/icon2.png);
+    background-image: url(../assets/images/introImg/icon2.png);
+    transform: rotate(-80deg);
+    background-size: cover;
+    animation: iconAnimation2 2s infinite;
+    z-index: 10;
+  }
+  .intro__icon2 {
+    position: absolute;
+    left: 20%;
+    top: 25%;
+    width: 100px;
+    height: 100px;
+    background-image: url(../assets/images/introImg/icon1.png);
+    transform: rotate(-0deg);
+    background-size: cover;
+    background-position: center;
+    animation: iconAnimation 2s infinite;
+  }
+  .intro__icon3 {
+    position: absolute;
+    top: 30%;
+    right: 20%;
+    width: 100px;
+    height: 100px;
+    background-image: url(../assets/images/introImg/icon3.png);
+    transform: rotate(-0deg);
+    background-size: cover;
+    background-position: center;
+    animation: iconAnimation3 2s infinite;
+  }
+  .intro__icon4 {
+    position: absolute;
+    top: 20%;
+    right: 40%;
+    width: 100px;
+    height: 100px;
+    background-image: url(../assets/images/introImg/icon5.png);
+    transform: rotate(-0deg);
+    background-size: cover;
+    background-position: center;
+    animation: iconAnimation4 2s infinite;
+  }
+  .intro__icon5 {
+    position: absolute;
+    top: 40%;
+    right: 50%;
+    width: 100px;
+    height: 100px;
+    background-image: url(../assets/images/introImg/icon4.png);
+    transform: rotate(-0deg);
+    background-size: cover;
+    background-position: center;
+    animation: iconAnimation3 2s infinite;
+  }
 }
 
 @keyframes iconAnimation {
@@ -76,12 +131,127 @@
 }
 @keyframes iconAnimation2 {
   0% {
-    right: 0;
+    left: 80%;
   }
   50% {
-    right: 50px;
+    left: 75%;
   }
   100% {
-    right: 0;
+    left: 80%;
+  }
+}
+@keyframes iconAnimation3 {
+  0% {
+    transform: rotate(-40deg);
+  }
+  50% {
+    transform: rotate(-50deg);
+  }
+  100% {
+    transform: rotate(-40deg);
+  }
+}
+@keyframes iconAnimation4 {
+  0% {
+    transform: rotate(-180deg);
+  }
+  50% {
+    transform: rotate(-0deg);
+  }
+  100% {
+    transform: rotate(-180deg);
+  }
+}
+
+$root: ".c-rainbow";
+
+:root {
+  // --color-background: #31037d;
+
+  --axis-x: 1px;
+  --axis-y: 1rem;
+  --delay: 10;
+
+  --color-black: #000;
+  --color-white: #fff;
+  --color-orange: #e2a427;
+  --color-red: #14a36d;
+  --color-violet: #29a3fb;
+  --color-blue: #fb626e;
+  --color-green: #fbd9a3;
+  --color-yellow: #ea792e;
+
+  --color-foreground: var(--color-white);
+  // --font-name: Righteous;
+}
+
+#{$root} {
+  z-index: 1;
+  font-weight: 1000;
+  counter-reset: rainbow;
+  position: relative;
+  display: block;
+
+  list-style: none;
+
+  padding: 0;
+  margin: 0;
+
+  &__layer {
+    --text-color: var(--color-foreground);
+    counter-increment: rainbow;
+    font-size: 10vw;
+    color: var(--text-color);
+
+    text-shadow: -1px -1px 0 var(--color-black), 1px -1px 0 var(--color-black),
+      -1px 1px 0 var(--color-black), 1px 1px 0 var(--color-black),
+      4px 4px 0 rgba(0, 0, 0, 0.2);
+
+    animation: rainbow 1.5s ease-in-out infinite;
+
+    @for $i from 1 through 7 {
+      &:nth-child(#{$i}) {
+        animation-delay: calc(#{$i} / var(--delay) * 1s);
+        left: calc(var(--axis-x) * #{$i});
+        z-index: -#{$i * 10};
+      }
+    }
+
+    &:not(:first-child) {
+      position: absolute;
+      top: 0;
+    }
+
+    &--white {
+      --text-color: var(--color-white);
+    }
+    &--orange {
+      --text-color: var(--color-orange);
+    }
+    &--red {
+      --text-color: var(--color-red);
+    }
+    &--violet {
+      --text-color: var(--color-violet);
+    }
+    &--blue {
+      --text-color: var(--color-blue);
+    }
+    &--green {
+      --text-color: var(--color-green);
+    }
+    &--yellow {
+      --text-color: var(--color-yellow);
+    }
+  }
+}
+
+@keyframes rainbow {
+  0%,
+  100% {
+    transform: translatey(var(--axis-y));
+  }
+  50% {
+    transform: translatey(calc(var(--axis-y) * -1));
   }
 }

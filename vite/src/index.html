@@ -7,7 +7,7 @@
     <title>진현미 포트폴리오</title>
   </head>
 
-  <body class="gmarket3">
+  <body class="Nanum3">
     <div id="Header">
       <section id="section1">
         <div class="header__inner">
@@ -28,55 +28,92 @@
     </div>
     <!-- //Header -->
 
-    <div id="intro">
+    <main id="main">
       <section id="section2">
-        <div class="intro__inner">
-          <div class="text">
-            <h6>끊기있고 차분하게 끝까지</h6>
-            <h1>PORTFOLIO</h1>
-            <h1><em>HYUN</em> <span>MI</span></h1>
+        <div id="intro">
+          <div class="intro__inner">
+            <div class="img">
+              <img
+                src="./assets/images/introImg/intro_img01.png"
+                alt="프로필사진"
+              />
+            </div>
+            <div class="text">
+              <h6>끊기있고 차분하게 끝까지</h6>
+              <ul class="c-rainbow">
+                <li class="c-rainbow__layer c-rainbow__layer--white">
+                  PORTFOLIO
+                </li>
+                <li class="c-rainbow__layer c-rainbow__layer--orange">
+                  PORTFOLIO
+                </li>
+                <li class="c-rainbow__layer c-rainbow__layer--red">
+                  PORTFOLIO
+                </li>
+                <li class="c-rainbow__layer c-rainbow__layer--violet">
+                  PORTFOLIO
+                </li>
+                <li class="c-rainbow__layer c-rainbow__layer--blue">
+                  PORTFOLIO
+                </li>
+              </ul>
+            </div>
             <div class="intro__icon1"></div>
             <div class="intro__icon2"></div>
+            <div class="intro__icon3"></div>
+            <div class="intro__icon4"></div>
+            <div class="intro__icon5"></div>
           </div>
         </div>
       </section>
-    </div>
-    <!-- //intro -->
+      <!-- //intro -->
 
-    <div id="profile" >
       <section id="section3">
-        <div class="profile__inner section">
-          <div class="text">
-            <div class="text-1">
-              <h3>
-                "I will strive to continue growing and improving."
-                <!-- "나는 계속해서 성장하고 발전하기 위해 노력할 것입니다." -->
-              </h3>
+        <div id="profile">
+          <div class="profile__inner">
+            <div class="text">
+              <div class="text-1">
+                <div>
+                  <h3>
+                    "I will strive to continue growing and improving."
+                    <!-- "나는 계속해서 성장하고 발전하기 위해 노력할 것입니다." -->
+                  </h3>
+                </div>
+                <div>
+                  <h2>JIN HYUN <br />MI</h2>
+                </div>
+              </div>
+              <div class="text-2">
+                <h6>저에 대해 더 소개해드리겠습니다.</h6>
+                <button><a href="#">지금 확인하기</a></button>
+              </div>
             </div>
-            <div class="text-2">
-              <h6>저에 대해 더 소개해드리겠습니다.</h6>
-              <button><a href="#">지금 확인하기</a></button>
-            </div>
-
           </div>
         </div>
+        <div class="clip">
+          <h5>01</h5>
+        </div>
       </section>
-    </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
 
     <script>
-      // var iconElement = document.querySelector(
-      //   "#intro #section2 .intro__icon1"
-      // );
-      // var rotationAngle = -40; // 시작 각도 (예시로 -40도)
-      // var angleIncrement = 1; // 각도 증가량 (예시로 1도씩 증가)
+      const img = document.querySelector("#section2 .img img");
 
-      // function rotateIcon() {
-      //   rotationAngle += angleIncrement; // 각도 변경
-      //   iconElement.style.transform = "rotate(" + rotationAngle + "deg)";
-      // }
-
-      // // 일정 시간 간격으로 각도 변경 함수 호출 (예시로 100ms마다 호출)
-      // setInterval(rotateIcon, 50);
+      // gsap 트윈 생성
+      gsap.fromTo(
+        img,
+        { xPercent: 200, opacity: 0.5 },
+        {
+          xPercent: 0,
+          opacity: 1,
+          duration: 1,
+          ease: "power2.out",
+          scrollTrigger: { trigger: img, start: "top center" },
+        }
+      );
     </script>
     <script type="module" src="./main.js"></script>
   </body>
