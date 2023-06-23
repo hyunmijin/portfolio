@@ -1,25 +1,15 @@
-#section3 {
+#section4 {
+  background-color: rgba(243, 245, 220, 0.933);
   width: 100vw;
-  height: 100vh;
+  height: 180vh;
   position: fixed;
   position: relative;
-  // background-color: #ccc;
-  .img {
-    position: absolute;
-    width: 500px;
-    height: 500px;
-    top: 20vh;
-    left: 35vw;
-    z-index: 100;
-    border: 5px solid #fff;
-    border-radius: 50%;
-    
-  }
+
   .clip {
     position: absolute;
     width: 20%;
     height: 50px;
-    background-color: rgba(220, 245, 220, 0.933);
+    background-color: rgba(243, 245, 220, 0.933);
     left: 0;
     top: -50px;
     border-radius: 0% 20px 0 0;
@@ -30,82 +20,21 @@
   }
 }
 .profile__inner {
-  height: 100vh;
-  background-color: rgba(220, 245, 220, 0.933);
   border-radius: 0% 2%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 100vw;
+  padding: 10%;
+  height: 180vh;
+  align-items: center;
+  // background-color: #fff;
   .text {
-    width: 100vw;
-    padding: 2%;
-    height: 100vh;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    .text-1 {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: space-between;
-      height: 47vh;
-      > div:nth-child(1) {
-        h3 {
-          width: 100%;
-          font-size: 30px;
-          font-weight: bold;
-        }
-      }
-      > div:nth-child(2) {
-        h2 {
-        // display: flex;
-        font-size: 6.5rem;
-        margin-left: auto;
-        text-align: end;
-        transform: translateX(calc(95vw - 100%));
-        }
-      }
-    }
-    .text-2 {
-
-      // background-color: #ccc;
-      // height: 5vh;
-      // margin: 10px 0;
-      &::before {
-        content: "";
-        display: block;
-        height: 1.5px;
-        background-color: #000;
-        margin: 0px auto;
-        width: 100%;
-      }
-    }
-
-    .text-3 {
-      display: flex;
-      justify-content: space-between;
-      padding: 30px 0;
-      height: 47vh;
-      >div {
-        h6 {
-          font-size: 1.5em;
-        }
-        button {
-          margin-top: 30px;
-          background-color: #000000;
-
-          border-radius: 30px;
-          width: 250px;
-          padding:  15px 35px;
-          a {
-            font-size: 1.5em;
-            color: #fff;
-          }
-        }
-        p {
-          font-size: 1.3em;
-        }
-      }
-    }
+    width: 90%;
+    background-color: #fff;
   }
 }
+
 // @media (min-width: 900px) {
 //   .profile__inner {
 //     border-radius: 0 2%;
