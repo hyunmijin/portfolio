@@ -54,14 +54,14 @@
     &::before {
       content: "";
       display: block;
-      height: 1.5px;
-      background-color: #dddddd;
+      height: 2px;
+      background-color: #eaf1ff;
       margin: 0px auto;
       width: 95%;
     }
   }
   .text3 {
-    width: 50%;
+    width: 35%;
     height: 70%;
     border-radius: 50px;
     background-color: #fff;
@@ -69,14 +69,14 @@
       h3 {
         margin-top: 80px;
         font-size: 40px;
-        color: #888787;
+        color: #666666;
         padding: 50px;
         text-align: right;
       }
       p {
         text-align: start;
         line-height: 2;
-        padding: 30px;
+        padding: 50px;
         color: #888787;
         .icon1 {
           position: relative;
@@ -170,8 +170,8 @@
         }
       }
     }
-    >div:nth-child(3) {
-      .text3-1{
+    > div:nth-child(3) {
+      .text3-1 {
         margin-left: 60px;
         font-size: 30px;
         em {
