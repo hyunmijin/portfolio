@@ -137,6 +137,8 @@
   }
 }
 .profile_intro__inner {
+  position: absolute;
+  top: 50px;
   height: 100vh;
   background-color: rgba(220, 245, 220, 0.933);
   border-radius: 0% 2%;

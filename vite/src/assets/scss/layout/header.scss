@@ -2,12 +2,13 @@
   // background: linear-gradient(180deg, transparent, #ffffffc2);
   background-size: 200% 100%;
   animation: blindEffect 10s linear infinite;
-  background-color: #fceae72f;
+  background-color: #fceae78f;
   backdrop-filter: blur(20px);
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100%;
+  right: 0;
+  width: 8%;
+  padding: 30px;
   z-index: 100;
 }
 .header__inner {

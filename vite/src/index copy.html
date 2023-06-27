@@ -71,9 +71,6 @@
       <section id="section3">
         <div id="profile_intro">
           <div class="profile_intro__inner">
-            <div class="clip">
-              <h5>01.</h5>
-            </div>
             <div class="text">
               <div class="text-1">
                 <div>
@@ -115,6 +112,9 @@
             <!-- <div class="intro__icon5"></div> -->
           </div>
         </div>
+        <div class="clip">
+          <h5>01.</h5>
+        </div>
         <div class="img">
           <img src="./assets/images/introImg/intro_img01.png" alt="" />
         </div>
@@ -123,9 +123,6 @@
 
       <section id="section4">
         <div id="profile">
-          <div class="clip">
-            <h5>01.</h5>
-          </div>
           <div class="profile__inner">
             <div class="text">
               <div class="text-1">
@@ -177,6 +174,9 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="clip">
+          <h5>01.</h5>
         </div>
         <div class="img">
           <!-- <img src="./assets/images/introImg/intro_img02.png" alt="" /> -->
@@ -256,23 +256,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
 
     <script>
-      const panel1 = document.querySelector("#section3");
+      const panel = document.querySelector("#section3");
 
       ScrollTrigger.create({
-        trigger: panel1,
+        trigger: panel,
         start: "top top",
         pin: true,
         pinSpacing: false,
       });
 
-      const panel2 = document.querySelector("#section4");
-
-      ScrollTrigger.create({
-        trigger: panel2,
-        start: "top top",
-        pin: true,
-        pinSpacing: true,
-      });
       // let sections = gsap.utils.toArray(".parallax__item");
 
       // gsap.to(sections, {

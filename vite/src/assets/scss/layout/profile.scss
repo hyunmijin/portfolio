@@ -1,17 +1,22 @@
 #section4 {
-  background-color: rgba(243, 245, 220, 0.933);
+  // background-color: #ccc;
   width: 100vw;
   height: 180vh;
   position: fixed;
   position: relative;
-
+}
+#profile {
+  width: 100vw;
+  height: 180vh;
+  position: relative;
+  // background-color: rgba(243, 245, 220, 0.933);
   .clip {
     position: absolute;
     width: 20%;
     height: 50px;
     background-color: rgba(243, 245, 220, 0.933);
-    left: 0;
-    top: -50px;
+    left: 384px;
+    top: -0px;
     border-radius: 0% 20px 0 0;
     h5 {
       font-size: 25px;
@@ -20,6 +25,8 @@
   }
 }
 .profile__inner {
+  position: absolute;
+  top: 50px;
   border-radius: 0% 2%;
   display: flex;
   text-align: center;
@@ -28,7 +35,7 @@
   padding: 10%;
   height: 180vh;
   align-items: center;
-  // background-color: #fff;
+  background-color: rgba(243, 245, 220, 0.933);
   .text {
     width: 90%;
     // background-color: #fff;
