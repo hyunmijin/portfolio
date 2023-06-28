@@ -1,0 +1,124 @@
+#section2 {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  z-index: 1000;
+  h2 {
+    width: 400px;
+    height: 60px;
+    background-color: #a4e0c6;
+    padding: 15px 0px 15px 40px;
+    border-radius: 0 30px 0 0;
+    display: inline-block;
+    color: #000000;
+  }
+  .sec2-cont {
+    height: 100%;
+    background-color: #ccf1e1;
+    h3 {
+      font-size: 2.4vw;
+      padding: 2vw;
+    }
+    .top {
+      height: 40vh;
+      border-bottom: 1px solid #14a36d;
+      display: flex;
+      flex-direction: column;
+      padding-right: 2vw;
+      padding-left: 50vw;
+      h4 {
+        font-size: 5vw;
+        line-height: 1.1;
+        text-align: right;
+        margin-bottom: 2vw;
+        font-weight: 600;
+      }
+      p {
+        padding-left: 50%;
+        text-align: right;
+        font-size: 16px;
+        line-height: 1.5;
+      }
+    }
+    .bottom {
+      padding: 40px 20px 20px 20px;
+      width: 20%;
+      a {
+        font-size: 26px;
+        background-color: #000;
+        color: #fff;
+        border-radius: 50px;
+        padding: 4px 40px;
+        display: inline-block;
+        margin-top: 20px;
+      }
+    }
+    .img {
+      position: absolute;
+      left: 50%;
+      top: 60%;
+      transform: translate(-50%, -50%);
+      width: 25vw;
+      height: 25vw;
+      border: 2px solid #14a36d;
+      border-radius: 50%;
+      .heart {
+        position: absolute;
+        left: 18%;
+        top: 16%;
+        z-index: 2000;
+        transform: translate(-50%, -50%) rotate(-30deg);
+        .st0 {
+          fill: #e52e44;
+        }
+        .st1 {
+          fill: #fa4654;
+        }
+        .st2 {
+          fill: #ea792e;
+        }
+        .st3 {
+          fill: #ff8b00;
+        }
+        .st4 {
+          fill: #e2a427;
+        }
+        .st5 {
+          fill: #f9c744;
+        }
+        .st6 {
+          fill: #14a36d;
+        }
+        .st7 {
+          fill: #15be79;
+        }
+        .st8 {
+          fill: #0989d8;
+        }
+        .st9 {
+          fill: #29a3fb;
+        }
+        .st10 {
+          fill: #8d00af;
+        }
+        .st11 {
+          fill: #aa0dd1;
+        }
+        .st12 {
+          fill: #fb626e;
+        }
+        .st13 {
+          fill: #fbd9a3;
+        }
+        .st14 {
+          fill: #ffac52;
+        }
+        svg {
+          width: 250px;
+          height: 250px;
+        }
+      }
+    }
+  }
+}

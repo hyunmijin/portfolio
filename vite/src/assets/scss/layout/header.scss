@@ -1,49 +1,39 @@
-#Header {
-  // background: linear-gradient(180deg, transparent, #ffffffc2);
-  background-size: 200% 100%;
-  animation: blindEffect 10s linear infinite;
-  background-color: #fceae78f;
-  backdrop-filter: blur(20px);
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 8%;
-  padding: 30px;
-  z-index: 100;
-}
-.header__inner {
-  display: flex;
-  justify-content: space-between;
-  padding: 1.2% 2%;
-  .title {
-    width: 50%;
-    h3 {
-      font-size: 1.1em;
-      font-weight: bold;
-    }
-  }
-  .nav {
-    width: 50%;
-    > ul {
-      text-align: right;
-      > li {
-        display: inline;
-        margin-left: 10%;
-        // background-color: #ffffff;
-        a {
-          font-size: 1em;
-          font-weight: 400;
-        }
-      }
-    }
-  }
+:root {
+  --color-background: #31037d;
+  --axis-x: 1px;
+  --axis-y: 2rem;
+  --delay: 10;
+  --color-black: #000;
+  --color-white: #fff;
+  --color-orange: #d49c3d;
+  --color-red: #d14b3d;
+  --color-violet: #cf52eb;
+  --color-blue: #44a3f7;
+  --color-green: #5acb3c;
+  --color-yellow: #debf40;
+  --color-foreground: var(--color-white);
+  --font-name: NanumSquareNeo;
 }
 
-@keyframes blindEffect {
-  0% {
-    background-position: 0% 0%;
-  }
-  100% {
-    background-position: 100% 0%;
-  }
+/* header */
+#header {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 10000;
+  background-color: #ffc1c153;
+  backdrop-filter: blur(20px);
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+#header .logo {
+  font-size: 20px;
+  font-weight: 800;
+}
+#header .nav li {
+  display: inline-block;
 }
