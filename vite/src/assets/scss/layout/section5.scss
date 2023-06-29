@@ -11,7 +11,7 @@
   }
   .sec5-cont {
     width: 100vw;
-    height: 95vh;
+    height: 97vh;
     background: #f5cce7;
   }
 }
@@ -30,7 +30,7 @@
   .sec6-cont {
     width: 100vw;
     height: 95vh;
-    background: #855a76;
+    background: #cce9f5;
   }
 }
 
@@ -48,7 +48,7 @@
   .sec7-cont {
     width: 100vw;
     height: 95vh;
-    background: #855a76;
+    background: #daf5cc;
   }
 }
 
@@ -66,7 +66,8 @@
   .sec8-cont {
     width: 100vw;
     height: 95vh;
-    background: #855a76;
+    background: #f2f5cc;
+
   }
 }
 
@@ -84,7 +85,7 @@
   .sec9-cont {
     width: 100vw;
     height: 95vh;
-    background: #855a76;
+    background: #f5d5cc;
   }
 }
 #section10 {
@@ -101,7 +102,7 @@
   .sec10-cont {
     width: 100vw;
     height: 95vh;
-    background: #855a76;
+    background: #ddccf5;
   }
 }
 #section11 {
@@ -114,51 +115,61 @@
     margin-left: 900px;
     padding: 15px 0px 15px 40px;
     border-radius: 30px 30px 0 0;
-    background: #943673;
+    background: #ee83ac;
   }
   .sec11-cont {
     width: 100vw;
     height: 95vh;
-    background: #943673;
+    background: #f3c3d5;
   }
 }
 
 #section12 {
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
-  position: relative;
-  z-index: 3000;
+  z-index: 15000;
   h2 {
     width: 300px;
     height: 60px;
-    margin-left: 600px;
-    background-color: #9da2ec;
+    margin-left: 1200px;
     padding: 15px 0px 15px 40px;
     border-radius: 30px 30px 0 0;
-    display: inline-block;
-    color: #000000;
+    background: #e9a5d1;
+  }
+  .sec12-cont {
+    width: 100vw;
+    height: 96vh;
+    background: #bc7ca5;
   }
 }
+
 #section13 {
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
-  position: relative;
-  z-index: 3000;
+  z-index: 15000;
   h2 {
     width: 300px;
     height: 60px;
-    margin-left: 600px;
-    background-color: #9da2ec;
+    margin-left: 1500px;
     padding: 15px 0px 15px 40px;
     border-radius: 30px 30px 0 0;
-    display: inline-block;
-    color: #000000;
+    background: #8e3970;
+  }
+  .sec13-cont {
+    width: 100vw;
+    height: 95vh;
+    background: #a03b7b;
   }
 }
 #section14 {
   width: 100vw;
   height: 100vh;
-  z-index: 14000;
+  z-index: 20000;
+  background-color: #ccc;
+}
+#section15 {
+  width: 100vw;
+  height: 100vh;
+  z-index: 20000;
+  background-color: #bf5a5a;
 }
