@@ -1,3 +1,4 @@
+//profileSkill
 #section3 {
   width: 100vw;
   height: 100vh;
@@ -16,14 +17,16 @@
     color: #000000;
   }
 }
-.profile_last__inner {
+.sec3-cont {
+  width: 100vw;
   height: 100vh;
   background-color: #faf3d9;
   border-radius: 0% 2% 0% 0%;
   color: #fff;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  // justify-content: center;
+  padding: 50px 0;
   align-items: center;
   .text1 {
     width: 100vw;
@@ -60,7 +63,7 @@
   }
   .text3 {
     width: 35%;
-    height: 70%;
+    height: 77%;
     border-radius: 50px;
     background-color: #fff;
     > div {
