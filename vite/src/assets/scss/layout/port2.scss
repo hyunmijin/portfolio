@@ -7,8 +7,8 @@
   h2 {
     width: 20%;
     height: 60px;
-    margin-left: 40%;
-    background-color: #a0a7ff;
+    margin-left: 40.15%;
+    background-color: #aecbeb;
     padding: 15px 0px 15px 40px;
     border-radius: 30px 30px 0 0;
     display: inline-block;
@@ -16,55 +16,54 @@
   }
   .sec4-cont {
     height: 100%;
-    background-color: #f9b16e;
+    background-color: #d2e7fd;
     h3 {
       font-size: 2.4vw;
       padding: 2vw;
-      background-color: #c7d4ff;
+      background-color: #d2e7fd;
     }
-    .site-wrap {
+    .site-wrap.s2 {
       // display: none;
       display: flex;
       flex-wrap: wrap;
-      width: 400vh;
+      width: 450vh;
+      position: absolute;
+      left: 10vw;
       .site {
-        width: 78.5vh;
+        width: 100vw;
         height: 78.5vh;
         background-color: #000;
         padding: 40px;
         position: relative;
         &.s1 {
-          background-color: #f9b16e;
+          background-color: #d2e7fd;
         }
         &.s2 {
-          background-color: #f9a971;
+          background-color: #d2e7fd;
         }
-        &.s3 {
-          background-color: #f8a174;
-        }
-        &.s4 {
-          background-color: #f89977;
-        }
-        &.s5 {
-          background-color: #f9b16e;
-        }
+
         .right {
           width: 50%;
           img {
+            width: 800px;
             position: absolute;
-            left: 90px;
-            bottom: 0px;
+            left: 50%;
+            bottom: -40%;
+            transform: translate(-50%, -50%);
           }
         }
         .left {
           width: 50%;
-          color: #fff;
+          p {
+            width: 40%;
+            font-size: 20px;
+          }
           a {
             font-size: 20px;
             background-color: #fff;
             display: inline-block;
             border-radius: 100px;
-            padding: 10px 20px;
+            padding: 15px 40px;
             margin-top: 10px;
             color: #000;
             cursor: pointer;
@@ -79,15 +78,13 @@
         }
         h4 {
           text-align: right;
-          font-size: 30px;
-          color: #fff;
+          font-size: 90px;
           border-bottom: 1px solid #fff;
-          padding-bottom: 20px;
+          padding-bottom: 40px;
           margin-bottom: 20px;
-          margin-top: 60px;
+          margin-top: -70px;
         }
         span {
-          color: #fff;
           font-size: 23px;
         }
       }
