@@ -36,16 +36,6 @@
         flex-direction: column;
         padding-left: 7vw;
         justify-content: center;
-
-        h4 {
-          font-size: 100px;
-          text-align: right;
-          padding: 0 30px;
-          margin-bottom: 150px;
-          // margin-bottom: 2vw;
-          font-weight: 600;
-          color: #000;
-        }
       }
       .bottom {
         // padding: 40px 20px 20px 20px;
@@ -57,7 +47,7 @@
           position: relative;
           width: 50%;
           h5 {
-            margin-top:280px;
+            margin-top: 280px;
             font-size: 20px;
           }
           p {

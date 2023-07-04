@@ -16,13 +16,13 @@
     height: 95vh;
     background: #ffd1d1;
     .img.i1 {
-      left: 1200px;
+      left: 1100px;
       top: 200px;
       position: absolute;
       width: 700px;
     }
     .img.i2 {
-      left: 800px;
+      left: 700px;
       top: 300px;
       position: absolute;
       width: 700px;
@@ -32,7 +32,7 @@
       padding: 2vw;
       color: #fff;
     }
-  
+
     .top {
       height: 30vh;
       border-bottom: 3px solid #f1fffa;
@@ -40,7 +40,7 @@
       flex-direction: column;
       padding-right: 2vw;
       padding-left: 50vw;
-  
+
       h4 {
         font-size: 100px;
         line-height: 1.2;
@@ -51,20 +51,20 @@
         color: #fff;
       }
     }
-  
+
     .bottom {
       // padding: 40px 20px 20px 20px;
       padding: 40px 20px 20px 60px;
       // width: 20%;
       // flex-direction: column;
       display: flex;
-  
+
       .left {
         position: absolute;
         left: 0px;
         top: 600px;
         width: 50%;
-  
+
         h3 {
           position: absolute;
           top: -450px;
@@ -72,7 +72,7 @@
           font-weight: bold;
           font-size: 100px;
         }
-  
+
         p {
           width: 50%;
           color: #fff;
@@ -81,7 +81,7 @@
           left: 100px;
           position: absolute;
         }
-  
+
         a {
           font-size: 26px;
           background-color: #ffffff;
@@ -93,7 +93,7 @@
           margin-top: -50px;
           left: 100px;
           position: absolute;
-  
+
           &:hover {
             background-color: #000000;
             color: #ffffff;
