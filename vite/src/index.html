@@ -316,10 +316,9 @@
         <h2>04. 스크립트</h2>
         <div class="sec5-cont">
           <h3>"웹의 감성을 품은 예술적인 개발자 : 사이트 코딩"</h3>
-          <div class="site-wrap s3">
+          <div class="site-top">
             <div class="site s1">
-              <span>웹표준 코딩을 해봤음</span>
-              <h4>웹표준을 준수한<br />사이트 제작</h4>
+              <h4>스크립트</h4>
               <div>
                 <div class="left">
                   <p>
@@ -327,25 +326,47 @@
                     효과를 작업하였습니다.
                   </p>
                   <a href="#">지금 확인하기</a>
-                </div>
-                <div class="right">
-                  <img src="../assets/images/port4/mockup.png" alt="dd" />
                 </div>
               </div>
             </div>
-            <div class="site s2">
-              <span>웹표준 코딩을 해봤음</span>
-              <h4>웹표준을 준수한<br />사이트 제작</h4>
-              <div>
-                <div class="left">
-                  <p>
-                    웹접근성, 스킵 메뉴, 이미지 스플라이트 이미지 슬라이드
-                    효과를 작업하였습니다.
-                  </p>
-                  <a href="#">지금 확인하기</a>
+          </div>
+          <div class="site-bottom">
+            <div class="tab-menu">
+              <div class="tab-cont">
+                <div class="cont c1">
+                  <h3 class="active">11</h3>
+                  탭메뉴1 내용<br />탭메뉴1 내용<br />탭메뉴1 내용<br />탭메뉴1
+                  내용
                 </div>
-                <div class="right">
-                  <img src="../assets/images/port4/mockup.png" alt="dd" />
+                <div class="cont c2">
+                  <h3>22</h3>
+                  탭메뉴2 내용<br />탭메뉴2 내용<br />탭메뉴2 내용<br />탭메뉴2
+                  내용
+                </div>
+                <div class="cont c3">
+                  <h3>3</h3>
+                  탭메뉴2 내용<br />탭메뉴2 내용<br />탭메뉴2 내용<br />탭메뉴2
+                  내용
+                </div>
+                <div class="cont c4">
+                  <h3>4</h3>
+                  탭메뉴2 내용<br />탭메뉴2 내용<br />탭메뉴2 내용<br />탭메뉴2
+                  내용
+                </div>
+                <div class="cont c5">
+                  <h3>5</h3>
+                  탭메뉴2 내용<br />탭메뉴2 내용<br />탭메뉴2 내용<br />탭메뉴2
+                  내용
+                </div>
+                <div class="cont c6">
+                  <h3>6</h3>
+                  탭메뉴2 내용<br />탭메뉴2 내용<br />탭메뉴2 내용<br />탭메뉴2
+                  내용
+                </div>
+                <div class="cont c7">
+                  <h3>7</h3>
+                  탭메뉴2 내용<br />탭메뉴2 내용<br />탭메뉴2 내용<br />탭메뉴2
+                  내용
                 </div>
               </div>
             </div>
@@ -380,8 +401,28 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
     <script src="https://supahfunk.github.io/supah-codepen/OrbitControls.110.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
     <script>
+      // $(function () {
+      //   let tabBtn = $(".tab-cont h3"); // 버튼 설정
+      //   let tabCont = $(".tab-cont > div"); // 콘텐츠 설정
+      //   let originalIndex = 0; // 원래 콘텐츠의 인덱스 저장 변수
+      //   tabCont.hide().eq(originalIndex).show(); // 첫 번째 콘텐츠만 보이게 설정
+
+      //   tabBtn.mouseover(function () {
+      //     const index = $(this).index(); // 클릭한 번호를 저장
+
+      //     tabCont.hide().eq(index).siblings().show(); // 선택한 콘텐츠 숨기고 나머지 콘텐츠 보이기
+
+      //     $(this).addClass("active").siblings().removeClass("active"); // 내가 클릭한 버튼에 클래스를 추가하고 나머지 버튼은 삭제
+      //   });
+
+      //   tabCont.mouseout(function () {
+      //     tabCont.hide().eq(originalIndex).show(); // 원래 콘텐츠 보이기
+      //   });
+      // });
+
       const box4 = document.querySelector("#section4 .parallaxs__item__img");
       document.addEventListener("DOMContentLoaded", function () {
         const tl = gsap.timeline({ defaults: { duration: 0.5 } });
