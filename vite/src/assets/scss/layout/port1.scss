@@ -27,6 +27,23 @@
       display: flex;
       flex-wrap: wrap;
       width: 400vh;
+      a {
+        position: absolute;
+        left: 5%;
+        bottom: 40%;
+        font-size: 20px;
+        background-color: #fff;
+        display: inline-block;
+        border-radius: 100px;
+        padding: 10px 20px;
+        // margin-top: 10px;
+        color: #000;
+        cursor: pointer;
+        &:hover {
+          background-color: #000;
+          color: #fff;
+        }
+      }
       .site {
         width: 78.5vh;
         height: 78.5vh;
@@ -63,20 +80,6 @@
           p {
             font-size: 16px;
             width: 70%;
-          }
-          a {
-            font-size: 20px;
-            background-color: #fff;
-            display: inline-block;
-            border-radius: 100px;
-            padding: 10px 20px;
-            margin-top: 10px;
-            color: #000;
-            cursor: pointer;
-            &:hover {
-              background-color: #000;
-              color: #fff;
-            }
           }
         }
         &div {

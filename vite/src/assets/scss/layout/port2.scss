@@ -28,7 +28,7 @@
       flex-wrap: wrap;
       width: 450vh;
       position: absolute;
-      left: 10vw;
+      left: 7vw;
       .site {
         width: 100vw;
         height: 78.5vh;
@@ -58,6 +58,9 @@
             width: 40%;
             font-size: 20px;
           }
+        }
+        &div {
+          display: flex;
           a {
             font-size: 20px;
             background-color: #fff;
@@ -72,9 +75,6 @@
               color: #fff;
             }
           }
-        }
-        &div {
-          display: flex;
         }
         h4 {
           text-align: right;
