@@ -41,7 +41,20 @@
         &.s2 {
           background-color: #d2e7fd;
         }
-
+        a {
+          font-size: 20px;
+          background-color: #fff;
+          display: inline-block;
+          border-radius: 100px;
+          padding: 15px 40px;
+          margin-top: 10px;
+          color: #000;
+          cursor: pointer;
+          &:hover {
+            background-color: #000;
+            color: #fff;
+          }
+        }
         .right {
           width: 50%;
           img {
@@ -61,20 +74,6 @@
         }
         &div {
           display: flex;
-          a {
-            font-size: 20px;
-            background-color: #fff;
-            display: inline-block;
-            border-radius: 100px;
-            padding: 15px 40px;
-            margin-top: 10px;
-            color: #000;
-            cursor: pointer;
-            &:hover {
-              background-color: #000;
-              color: #fff;
-            }
-          }
         }
         h4 {
           text-align: right;
@@ -82,7 +81,7 @@
           border-bottom: 1px solid #fff;
           padding-bottom: 40px;
           margin-bottom: 20px;
-          margin-top: -70px;
+          margin-top: 20px;
         }
         span {
           font-size: 23px;
