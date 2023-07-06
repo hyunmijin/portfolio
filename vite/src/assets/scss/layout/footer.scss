@@ -24,6 +24,44 @@
         height: 45px;
         width: 100%;
         border-bottom: 1px solid #000;
+        display: flex;
+        .icon {
+          margin-left: 30px;
+          content: "";
+          width: 30px;
+          height: 30px;
+          background-size: cover;
+          margin-right: 10px;
+          &.i1 {
+            background-image: url("../assets/images/profileSkill/html5.png");
+          }
+          &.i2 {
+            background-image: url("../assets/images/profileSkill/CSS3.png");
+          }
+          &.i3 {
+            background-image: url("../assets/images/profileSkill/Javascript.png");
+          }
+          &.i4 {
+            background-image: url("../assets/images/profileSkill/PHP.png");
+          }
+          &.i5 {
+            background-image: url("../assets/images/profileSkill/React.png");
+          }
+          &.i6 {
+            background-image: url("../assets/images/profileSkill/scss.png");
+          }
+          &.i7 {
+            background-image: url("../assets/images/profileSkill/Vue.png");
+          }
+        }
+        .icon_3 {
+          content: "";
+          width: 30px;
+          height: 30px;
+          background-size: cover;
+          background-image: url("../assets/images/profileSkill/Javascript.png");
+          margin-right: 10px;
+        }
         p {
           font-size: 20px;
           margin-left: 20px;
@@ -56,12 +94,12 @@
       }
 
       p {
-        font-size: 25px;
+        font-size: 20px;
         margin-bottom: 50px;
       }
 
       em {
-        font-size: 25px;
+        font-size: 20px;
         margin-bottom: 50px;
       }
     }
