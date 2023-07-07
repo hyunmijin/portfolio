@@ -7,19 +7,6 @@
   </head>
 
   <body>
-        <div class="balls balls-1">
-    <div class="ball ball--1"></div>
-        <div class="ball ball--2"></div>
-        <div class="ball ball--3"></div>
-        <div class="ball ball--4"></div>
-    </div>
-    <div class="balls balls-2">
-    <div class="ball ball--1"></div>
-        <div class="ball ball--2"></div>
-        <div class="ball ball--3"></div>
-        <div class="ball ball--4"></div>
-    </div>
-    
     <header id="header">
       <h1 class="logo"><span>🍔</span> Pol</h1>
       <!-- <nav class="nav">
@@ -229,7 +216,7 @@
                     유투버를 추천해주는 사이트를 제작했습니다.
                   </p>
                 </div>
-                <a href="#">지금 확인하기</a>
+                <a href="#">준비중입니다.</a>
                 <div class="right">
                   <img src="../assets/images/port1/mockup2.png" alt="dd" />
                 </div>
@@ -505,10 +492,7 @@
                     <div class="div">
                       <h6>GAME</h6>
                       <p class="text1">GAME</p>
-                      <em
-                        >요소의 위치, 크기, 투명도 등을 애니메이션화 해서 만든
-                        페이지입니다.</em
-                      >
+                      <em>테트리스 게임을 만들어봤습니다.</em>
                       <img src="../assets/images/port3/mockup6.png" alt="" />
                       <div class="icon">
                         <a
@@ -530,13 +514,8 @@
                   <div class="cont c2">
                     <div class="div">
                       <h6>MUSIC</h6>
-                      <p class="text1">
-                        GSAP를 이용한 <br />포트폴리오 메인화면
-                      </p>
-                      <em
-                        >요소의 위치, 크기, 투명도 등을 애니메이션화 해서 만든
-                        페이지입니다.</em
-                      >
+                      <p class="text1">MUSIC</p>
+                      <em>한곡재생, 반복재생, 리스트 등의 작업을 했습니다.</em>
                       <img src="../assets/images/port3/mockup7.png" alt="" />
                       <div class="icon">
                         <a
@@ -559,7 +538,7 @@
         <h2>05. 연락처</h2>
         <div class="footer">
           <div class="top">
-            <div class="text1">
+            <!-- <div class="text1">
               <p>나의 스킬</p>
               <div class="icon i1"></div>
               <div class="icon i2"></div>
@@ -568,13 +547,18 @@
               <div class="icon i5"></div>
               <div class="icon i6"></div>
               <div class="icon i7"></div>
+            </div> -->
+            <div class="text2">
+              <p>List</p>
             </div>
             <div class="text2">
-              <p>
-                "저의 포트폴리오를 통해 제 작품들을 엿볼 수 있습니다. 저의
-                열정과 전문성을 확인해보시고, 함께 일하고 싶다는 생각이 드신다면
-                언제든지 연락 주세요."
-              </p>
+              <p></p>
+            </div>
+            <div class="text2">
+              <p></p>
+            </div>
+            <div class="text2">
+              <p></p>
             </div>
           </div>
           <div class="bottom">
@@ -605,7 +589,7 @@
           tabBtn.mouseover(function () {
             const index = $(this).index(); // 클릭한 번호를 저장
 
-            tabCont.hide().eq(index).siblings().show(); // 선택한 콘텐츠 숨기고 나머지 콘텐츠 보이기
+            tabCont.hide().fadeOut(200).eq(index).siblings().show().fadeIn(200); // 선택한 콘텐츠 숨기고 나머지 콘텐츠 보이기
 
             $(this).addClass("active").siblings().removeClass("active"); // 내가 클릭한 버튼에 클래스를 추가하고 나머지 버튼은 삭제
           });
@@ -613,27 +597,6 @@
           tabCont.mouseout(function () {
             tabCont.hide().eq(originalIndex).show(); // 원래 콘텐츠 보이기
           });
-        });
-      });
-
-      const box4 = document.querySelector("#section4 .parallaxs__item__img");
-      document.addEventListener("DOMContentLoaded", function () {
-        const tl = gsap.timeline({ defaults: { duration: 0.5 } });
-
-        const icons = document.querySelectorAll(".text3-1 > span");
-
-        // 숨김 상태로 초기화
-        gsap.set(icons, { opacity: 0, y: 50 });
-
-        ScrollTrigger.create({
-          trigger: ".profile_skill", // 트리거로 사용할 요소 선택자
-          start: "top 80%", // 트리거의 상단이 화면 80%에 도달했을 때 애니메이션 실행
-          onEnter: () => {
-            // 트리거 진입 시 애니메이션 실행
-            icons.forEach((icon, index) => {
-              tl.to(icon, { opacity: 1, y: 0, delay: index * 0.1 });
-            });
-          },
         });
       });
 
