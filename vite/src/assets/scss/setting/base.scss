@@ -13,9 +13,11 @@ html {
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
+
 body {
   overflow-x: hidden;
 }
+
 /* 공백 초기화 */
 body,
 button,
@@ -173,33 +175,43 @@ select {
 .mt0 {
   margin-top: 0;
 }
+
 .mt10 {
   margin-top: 10px;
 }
+
 .mt20 {
   margin-top: 20px;
 }
+
 .mt30 {
   margin-top: 30px;
 }
+
 .mt40 {
   margin-top: 40px;
 }
+
 .mt50 {
   margin-top: 50px;
 }
+
 .mt60 {
   margin-top: 60px;
 }
+
 .mt70 {
   margin-top: 70px;
 }
+
 .mt80 {
   margin-top: 80px;
 }
+
 .mt90 {
   margin-top: 90px;
 }
+
 .mt100 {
   margin-top: 100px;
 }
@@ -207,36 +219,47 @@ select {
 .pt0 {
   padding-top: 0;
 }
+
 .pt10 {
   padding-top: 10px;
 }
+
 .pt20 {
   padding-top: 20px;
 }
+
 .pt30 {
   padding-top: 30px;
 }
+
 .pt40 {
   padding-top: 40px;
 }
+
 .pt50 {
   padding-top: 50px;
 }
+
 .pt60 {
   padding-top: 60px;
 }
+
 .pt70 {
   padding-top: 70px;
 }
+
 .pt80 {
   padding-top: 80px;
 }
+
 .pt90 {
   padding-top: 90px;
 }
+
 .pt100 {
   padding-top: 100px;
 }
+
 .pt200 {
   padding-top: 200px;
 }
@@ -244,19 +267,23 @@ select {
 // 스크롤바
 /* 스크롤바 트랙 스타일 */
 ::-webkit-scrollbar {
-  width: 10px; /* 스크롤바의 너비 */
+  width: 10px;
+  /* 스크롤바의 너비 */
 }
 
 /* 스크롤바 슬라이더 스타일 */
 ::-webkit-scrollbar-thumb {
-  background-color: #ff5a91b3; /* 스크롤바 슬라이더의 배경색 */
-  border-radius: 10px; /* 스크롤바 슬라이더의 둥근 모서리 반지름 */
+  background-color: #ff5a91b3;
+  /* 스크롤바 슬라이더의 배경색 */
+  border-radius: 10px;
+  /* 스크롤바 슬라이더의 둥근 모서리 반지름 */
   padding: 10px;
 }
 
 /* 스크롤바 트랙을 눈에 띄게 표시할 경우 */
 ::-webkit-scrollbar-track {
-  background-color: #d0e0e0; /* 스크롤바 트랙의 배경색 */
+  background-color: #d0e0e0;
+  /* 스크롤바 트랙의 배경색 */
 }
 
 /* 스크롤바 슬라이더를 hover 시 표시할 경우 */
@@ -266,10 +293,100 @@ select {
 
 /* 수평 스크롤바 스타일 */
 ::-webkit-scrollbar-horizontal {
-  height: 3px; /* 수평 스크롤바의 높이 */
+  height: 3px;
+  /* 수평 스크롤바의 높이 */
 }
 
 /* 수직 스크롤바 스타일 */
 ::-webkit-scrollbar-vertical {
-  width: 3px; /* 수직 스크롤바의 너비 */
+  width: 3px;
+  /* 수직 스크롤바의 너비 */
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: #ffffff;
+  .ring {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+    background: transparent;
+    border: 3px solid #3c3c3c;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 150px;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: #fff000;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px #fff000;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+  
+    .ring:before {
+      content: '';
+      position: absolute;
+      top: -3px;
+      left: -3px;
+      width: 100%;
+      height: 100%;
+      border: 3px solid transparent;
+      border-top: 3px solid #fff000;
+      border-right: 3px solid #fff000;
+      border-radius: 50%;
+      animation: animateC 2s linear infinite;
+  
+      span {
+        display: block;
+        position: absolute;
+        top: calc(50% - 2px);
+        left: 50%;
+        width: 50%;
+        height: 4px;
+        background: transparent;
+        transform-origin: left;
+        animation: animate 2s linear infinite;
+  
+        span:before {
+          content: '';
+          position: absolute;
+          width: 16px;
+          height: 16px;
+          border-radius: 50%;
+          background: #fff000;
+          top: -6px;
+          right: -8px;
+          box-shadow: 0 0 20px #fff000;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+@keyframes animateC {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(45deg);
+  }
+
+  100% {
+    transform: rotate(405deg);
+  }
 }
