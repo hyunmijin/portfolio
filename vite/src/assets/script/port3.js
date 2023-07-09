@@ -1,3 +1,4 @@
+//콘텐츠 마우스오버효과
 $(function () {
     $(".tab-group").each(function () {
       let tabGroup = $(this);
@@ -18,4 +19,17 @@ $(function () {
         tabCont.hide().eq(originalIndex).show(); // 원래 콘텐츠 보이기
       });
     });
+  });
+
+  //pin효과
+  const panel5 = document.querySelector("#section5");
+
+  ScrollTrigger.create({
+    trigger: panel5,
+    start: "top top",
+    scrub: true,
+    pin: true,
+    end: "+=20000",
+    anticipatePin: 1,
+    pinSpacing: false,
   });

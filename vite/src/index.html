@@ -194,7 +194,7 @@
           </div>
           <div class="site s4">
             <span>웹표준 코딩 사이트</span>
-            <h4>John R. Hamilton <br />사이트</h4>
+            <h4>clone 사이트 <br>John R. Hamilton </h4>
             <div>
               <div class="left">
                 <p>John R. Hamilton사이트를 똑같이 따라 만들었습니다.</p>
@@ -483,224 +483,14 @@
     </section>
     <!-- //footer -->
   </main>
-
+  <script type="module" src="./main.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
   <script src="https://supahfunk.github.io/supah-codepen/OrbitControls.110.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-  <script>
-    gsap.set(".text-wrap ul li", { autoAlpha: 0 });
-    gsap.set("#artboard", { autoAlpha: 0, scale: 0.7 });
-    gsap.set("#canvas", { autoAlpha: 0 });
 
-    setTimeout(() => {
-      gsap.to("#canvas", { autoAlpha: 1 });
-      gsap.to("#artboard", { autoAlpha: 1, scale: 1, duration: 2, delay: 1 });
-      gsap.to(".text-wrap ul li", {
-        autoAlpha: 1,
-        scale: 1,
-        duration: 2,
-        delay: 2,
-        stagger: 0.1,
-      });
-    }, 2000);
-
-
-
-    // pin효과
-    const panel = document.querySelector("#section1");
-
-    ScrollTrigger.create({
-      trigger: panel,
-      start: "top top",
-      pin: true,
-      pinSpacing: false,
-      scrub: true,
-      anticipatePin: 1,
-    });
-
-    const panel2 = document.querySelector("#section2");
-
-    ScrollTrigger.create({
-      trigger: panel2,
-      start: "top top",
-      pin: true,
-      pinSpacing: false,
-      scrub: true,
-      anticipatePin: 1,
-      end: "+=20000",
-    });
-
-    const panel3 = document.querySelector("#section3");
-    const ani3 = gsap.timeline();
-    ani3.to(".site-wrap.s1", { xPercent: -300 });
-
-    ScrollTrigger.create({
-      animation: ani3,
-      trigger: panel3,
-      start: "top top",
-      pin: true,
-      pinSpacing: false,
-      scrub: true,
-      anticipatePin: 1,
-      end: "+=20000",
-    });
-
-    const panel4 = document.querySelector("#section4");
-
-    //핀 애니메이션 효과
-    const ani4 = gsap.timeline();
-    ani4.to(".site-wrap.s2", { xPercent: -400 });
-
-    ScrollTrigger.create({
-      animation: ani4,
-      trigger: panel4,
-      start: "top top",
-      scrub: true,
-      pin: true,
-      end: "+=20000",
-      anticipatePin: 1,
-      pinSpacing: false,
-    });
-
-    const panel5 = document.querySelector("#section5");
-
-    ScrollTrigger.create({
-      trigger: panel5,
-      start: "top top",
-      scrub: true,
-      pin: true,
-      end: "+=20000",
-      anticipatePin: 1,
-      pinSpacing: false,
-    });
-
-    const panel6 = document.querySelector("#section6");
-
-    ScrollTrigger.create({
-      trigger: panel6,
-      start: "top top",
-      pin: true,
-      anticipatePin: 1,
-    });
-  </script>
-  <script>
-    //2차원 벡터
-    class Vector {
-      constructor(x, y) {
-        this.x = x;
-        this.y = y;
-      }
-      set(x, y) {
-        this.x = x;
-        this.y = y;
-        return this;
-      }
-      clone() {
-        return new Vector(this.x, this.y);
-      }
-      add(v) {
-        this.x += v.x;
-        this.y += v.y;
-        return this;
-      }
-      sub(v) {
-        this.x -= v.x;
-        this.y -= v.y;
-        return this;
-      }
-      setFromAngle(angle) {
-        this.x = Math.cos(angle);
-        this.y = Math.sin(angle);
-      }
-      addFromScalar(x, y) {
-        this.x += x;
-        this.y += y;
-      }
-    }
-
-    window.onload = function () {
-      var canvas = document.getElementById("canvas"),
-        ctx = canvas.getContext("2d"),
-        width = (canvas.width = window.innerWidth),
-        height = (canvas.height = window.innerHeight),
-        particles = [],
-        particleNum = 80,
-        colors = ["#eeb900", "#6DD0A5", "#f799db"];
-
-      function randomIntFromRange(min, max) {
-        return Math.floor(Math.random() * (max - min + 1) + min);
-      }
-      function randomColor(colors) {
-        return colors[Math.floor(Math.random() * colors.length)];
-      }
-      class Particle {
-        constructor(x, y, speed, direction, radius, color) {
-          this.position = new Vector(x, y);
-          this.velocity = new Vector(1, 1);
-          this.velocity.setFromAngle(direction);
-          this.speed = speed;
-          this.radius = radius;
-          this.color = color;
-        }
-        update() {
-          this.position.addFromScalar(
-            this.velocity.x * this.speed,
-            this.velocity.y * this.speed
-          );
-          if (
-            this.position.x + this.radius > canvas.width ||
-            this.position.x - this.radius < 0
-          ) {
-            this.velocity.x *= -1;
-          }
-          if (
-            this.position.y + this.radius > canvas.height ||
-            this.position.y - this.radius < 0
-          ) {
-            this.velocity.y *= -1;
-          }
-        }
-      }
-
-      for (let i = 0; i < particleNum; i++) {
-        particles.push(
-          new Particle(
-            canvas.width / 2,
-            canvas.height / 2,
-            Math.random() + 1,
-            Math.random() * Math.PI * 2,
-            randomIntFromRange(2, 24),
-            randomColor(colors)
-          )
-        );
-      }
-
-      render();
-
-      function render() {
-        ctx.clearRect(0, 0, width, height);
-        for (let i = 0; i < particleNum; i++) {
-          var p = particles[i];
-          p.update();
-          ctx.beginPath();
-          ctx.arc(
-            p.position.x,
-            p.position.y,
-            p.radius,
-            0,
-            Math.PI * 2,
-            false
-          );
-          ctx.fillStyle = p.color;
-          ctx.fill();
-        }
-        requestAnimationFrame(render);
-      }
-    };
-  </script>
 
   <script>
     var pi = Math.PI;
@@ -1117,7 +907,7 @@
       renderer.setSize(innerWidth, innerHeight);
     });
   </script>
-  <script type="module" src="./main.js"></script>
+
 </body>
 
 </html>
