@@ -7,96 +7,93 @@
   <title>진현미 포트폴리오</title>
 </head>
 <style>
-body
-{
-  width: 100vw;
-  height: 100vh;
-  margin:0;
-  padding:0;
-  background:#fff;
-  background-color: #fff;
-}
-.ring
-{
-  position:absolute;
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%);
-  width:150px;
-  height:150px;
-  background:transparent;
-  border:3px solid #3c3c3c;
-  border-radius:50%;
-  text-align:center;
-  line-height:150px;
-  font-family:sans-serif;
-  font-size:20px;
-  color:#fff000;
-  letter-spacing:4px;
-  text-transform:uppercase;
-  text-shadow:0 0 10px #fff000;
-  box-shadow:0 0 20px rgb(255, 255, 255);
-}
-.ring:before
-{
-  content:'';
-  position:absolute;
-  top:-3px;
-  left:-3px;
-  width:100%;
-  height:100%;
-  border:3px solid transparent;
-  border-top:3px solid #fff000;
-  border-right:3px solid #fff000;
-  border-radius:50%;
-  animation:animateC 2s linear infinite;
-}
-.ring > span
-{
-  display:block;
-  position:absolute;
-  top:calc(50% - 2px);
-  left:50%;
-  width:50%;
-  height:4px;
-  background:transparent;
-  transform-origin:left;
-  animation:animate 2s linear infinite;
-}
-.ring > span:before
-{
-  content:'';
-  position:absolute;
-  width:16px;
-  height:16px;
-  border-radius:50%;
-  background:#fff000;
-  top:-6px;
-  right:-8px;
-  box-shadow:0 0 20px #fff000;
-}
-@keyframes animateC
-{
-  0%
-  {
-    transform:rotate(0deg);
+  body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    background-color: #fff;
   }
-  100%
-  {
-    transform:rotate(360deg);
+
+  .ring {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+    background: transparent;
+    border: 3px solid #3c3c3c;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 150px;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: #fff000;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px #fff000;
+    box-shadow: 0 0 20px rgb(255, 255, 255);
   }
-}
-@keyframes animate
-{
-  0%
-  {
-    transform:rotate(45deg);
+
+  .ring:before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    width: 100%;
+    height: 100%;
+    border: 3px solid transparent;
+    border-top: 3px solid #fff000;
+    border-right: 3px solid #fff000;
+    border-radius: 50%;
+    animation: animateC 2s linear infinite;
   }
-  100%
-  {
-    transform:rotate(405deg);
+
+  .ring>span {
+    display: block;
+    position: absolute;
+    top: calc(50% - 2px);
+    left: 50%;
+    width: 50%;
+    height: 4px;
+    background: transparent;
+    transform-origin: left;
+    animation: animate 2s linear infinite;
   }
-}
+
+  .ring>span:before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #fff000;
+    top: -6px;
+    right: -8px;
+    box-shadow: 0 0 20px #fff000;
+  }
+
+  @keyframes animateC {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes animate {
+    0% {
+      transform: rotate(45deg);
+    }
+
+    100% {
+      transform: rotate(405deg);
+    }
+  }
 </style>
 
 <body>
@@ -170,9 +167,9 @@ body
           </div>
           <div class="bottom">
             <p>
-              "긍정적인 성격으로 어려움을 긍정적인 시각으로 바라보고 해결하는 개발자입니다."
+              긍정적이고 꼼꼼한 성격을 갖춘 개발자로서 주어진 일에 최선을 다해 노력하겠습니다. 함께 일하면 더 나은 결과물을 만들어낼 수 있을 것입니다.
             </p>
-            <a href="#">자기소개</a>
+            <a href="https://hyunmijin.github.io/web2023/javascript/parallax/parallaxEffect_port.html" target="_blank">자기소개</a>
           </div>
           <div class="img">
             <img src="./assets/images/profile/profile.png" alt="나" />
