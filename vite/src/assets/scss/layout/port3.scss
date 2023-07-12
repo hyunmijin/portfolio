@@ -110,13 +110,12 @@
           border-radius: 10px;
           height: 450px;
           background-color: #fff;
-          padding: 13%;
+          // padding: 13%;
           // justify-content: center;
           // display: flex;
           position: relative;
           &:hover {
-            width: 300px;
-            transition: all 5s;
+            width: 360px;
             .cont .div_1 {
               display: none;
             }
@@ -132,11 +131,8 @@
             // background-color: #fff;
 
             .div_1 {
-              // display: flex;
-              // justify-content: center;
-              // width: auto;
               p {
-                padding: 20px;
+                padding: 30px;
                 text-align: start;
                 font-size: 25px;
                 font-weight: bold;
@@ -148,10 +144,10 @@
           }
 
           .div_2 {
+            padding: 40px;
             display: none;
-            width: 170%;
+            width: 300%;
             height: 100%;
-            background-color: #ccc;
             .icon {
               a {
                 &::after {
