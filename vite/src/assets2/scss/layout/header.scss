@@ -1,0 +1,39 @@
+:root {
+  --color-background: #31037d;
+  --axis-x: 1px;
+  --axis-y: 2rem;
+  --delay: 10;
+  --color-black: #000;
+  --color-white: #fff;
+  --color-orange: #d49c3d;
+  --color-red: #d14b3d;
+  --color-violet: #cf52eb;
+  --color-blue: #44a3f7;
+  --color-green: #5acb3c;
+  --color-yellow: #debf40;
+  --color-foreground: var(--color-white);
+  --font-name: NanumSquareNeo;
+}
+
+/* header */
+#header {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1000000;
+  background-color: #ffc1c153;
+  backdrop-filter: blur(20px);
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+#header .logo {
+  font-size: 20px;
+  font-weight: 800;
+}
+#header .nav li {
+  display: inline-block;
+}
