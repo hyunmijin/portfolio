@@ -127,13 +127,13 @@
         flex-wrap: wrap;
         position: absolute;
         left: 7vw;
-        width: 150vh;
+        width: 200vh;
 
         .site {
-          padding: 10px;
+          padding: 50px;
 
           a {
-            font-size: 10px;
+            font-size: 15px;
             padding: 10px 30px;
           }
 
@@ -141,7 +141,7 @@
             img {
               width: 350px;
               left: 55%;
-              bottom: -30%;
+              bottom: -35%;
             }
           }
 
@@ -150,7 +150,7 @@
 
             p {
               width: 200%;
-              font-size: 12px;
+              font-size: 14px;
             }
           }
 
