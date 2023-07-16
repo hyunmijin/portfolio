@@ -211,26 +211,33 @@
         transform: translate(-50%, -50%);
         position: absolute;
         display: block;
-        width: 80%;
+        width: 100%;
         .tab-group {
+          width: 100%;
           border-radius: 10px;
           height: 60px;
           position: relative;
 
           .tab-cont {
+            width: 100%;
             width: 0px;
             .cont {
-
+              width: 100vw;
+              padding: 10px;
+              display: flex;
+              justify-content: center;
+              // background-color: #fff;
               .div_1 {
                 display: none;
               }
               .div_2 {
-                width: 280%;
+                width: 300px;
                 padding: 10px;
                 background-color: #fff;
                 border-radius: 10px;
                 height: 50px;
-                display: block;
+                display: flex;
+                // justify-content: center;
                 position: relative;
                 .icon {
                   a {
