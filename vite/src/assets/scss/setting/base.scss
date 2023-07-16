@@ -18,6 +18,8 @@ body {
   overflow-x: hidden;
 }
 
+html, body { max-width: 100%; overflow-x: hidden; }
+
 @media (max-width: 800px) {
   body {
     overflow-x: hidden;
