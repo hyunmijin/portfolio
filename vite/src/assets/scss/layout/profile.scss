@@ -250,6 +250,9 @@
 // }
 @media (max-width: 420px) {
   #section2 {
+        h2 {
+      display: none;
+    }
     overflow-x: hidden;
 
     .sec2-cont {
