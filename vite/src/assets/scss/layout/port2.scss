@@ -123,12 +123,11 @@
       }
 
       .site-wrap.s2 {
-        // display: none;
         display: flex;
         flex-wrap: wrap;
-        width: 200vh;
         position: absolute;
         left: 7vw;
+        width: 150vh;
 
         .site {
           padding: 10px;
