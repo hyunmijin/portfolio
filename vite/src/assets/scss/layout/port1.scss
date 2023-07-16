@@ -103,4 +103,35 @@
   }
 }
 
-//port1
+@media (max-width: 800px) {
+  #section3 {
+    h2 {
+display: none;
+    }
+    .sec3-cont {
+      h3 {
+        font-size: 25px;
+      }
+      .site-wrap.s1 {
+        width: 900vw;
+        a {
+          left: 9%;
+          bottom: 45%;
+        }
+        .site {
+          width: 74vh;
+          height: 100vh;
+          padding: 60px;
+          .right {
+            img {
+              width: 440px;
+              left: 200px;
+              bottom: 300px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
