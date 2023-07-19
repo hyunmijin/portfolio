@@ -107,6 +107,102 @@
   }
 }
 
+@media (max-width: 1600px) {
+  #section4 {
+
+    .sec4-cont {
+      h3 {
+        font-size: 25px;
+      }
+      
+      .site-wrap.s2 {
+        width: 520vh;
+
+        .site {
+          .right {
+            img {
+              width: 600px;
+              left: 40%;
+              bottom: -40%;
+            }
+          }
+          h4 {
+            font-size: 70px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  #section4 {
+
+    .sec4-cont {
+      
+      .site-wrap.s2 {
+
+        .site {
+          .right {
+            img {
+              width: 600px;
+              left: 70%;
+            }
+          }
+          h4 {
+            width: 600px;
+            font-size: 70px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  #section4 {
+
+    .sec4-cont {
+      
+      .site-wrap.s2 {
+
+        .site {
+          
+        a {
+          font-size: 18px;
+          padding: 12px 30px;
+          margin-top: 15px;
+
+          &:hover {
+            background-color: #000;
+            color: #fff;
+          }
+        }
+          .right {
+            img {
+              width: 550px;
+              left: 70%;
+              bottom: -35%;
+            }
+          }
+          .left {
+            width: 50%;
+  
+            p {
+              font-size: 18px;
+            }
+          }
+          h4 {
+            width: 550px;
+            font-size: 50px;
+          }
+          
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 420px) {
   #section4 {
     overflow: hidden;
