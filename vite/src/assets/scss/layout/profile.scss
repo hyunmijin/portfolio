@@ -377,51 +377,24 @@
 
 @media (max-width: 420px) {
   #section2 {
-        h2 {
-      display: none;
-    }
-    overflow-x: hidden;
-
     .sec2-cont {
-      h3 {
-        font-size: 18px;
-      }
 
-      .top {
-        padding: 20px 20px 0px 100px;
-        h4 {
-          display: none;
-        }
+      .top {  
         p {
-          font-size: 13px;
+          display: none;
         }
       }
       .bottom {
-        width: 70%;
-        padding: 120px 90px 20px 10px;
-        p {
-          font-size: 13px;
-        }
-        a {
-          font-size: 13px;
-          padding: 5px 20px;
-        }
+        padding: 40px 20px 20px 50px;
+        width: 50%;
+  
       }
-
       .img {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        width: 45vw;
-        height: 45vw;
-
-        .heart {
-          svg {
-            width: 100px;
-            height: 100px;
-          }
-        }
+        top: 32%;
+        width: 35vw;
+        height: 35vw;
       }
+  
     }
 
   }
