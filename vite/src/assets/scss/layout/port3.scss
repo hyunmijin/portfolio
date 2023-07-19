@@ -187,6 +187,7 @@
       h3 {
         font-size: 25px;
       }
+
       .site-top {
         .site {
           .left {
@@ -256,6 +257,7 @@
       h3 {
         font-size: 25px;
       }
+
       .site-top {
         .site {
           .left {
@@ -325,6 +327,7 @@
       h3 {
         font-size: 25px;
       }
+
       .site-top {
         .site {
           .left {
@@ -347,10 +350,12 @@
             height: 340px;
 
             &:hover {
-              width: 260px;
+              width: 200px;
             }
 
             .div_2 {
+              width: 200px;
+              padding: 20px;
 
               .icon {
                 a {
@@ -388,7 +393,117 @@
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 1000px) {
+  #section5 {
+    h2 {
+    }
+
+    .sec5-cont {
+      h3 {
+        font-size: 18px;
+      }
+
+      .site-top {
+        .site {
+          h4 {
+            margin-top: -20px;
+            font-size: 40px;
+          }
+
+          >div {
+            .left {
+              p {
+                font-size: 13px;
+                width: 200%;
+              }
+            }
+          }
+        }
+      }
+
+      .site-bottom {
+        .tab-menu {
+          height: 100%;
+          left: 50%;
+          top: 15%;
+          transform: translate(-50%, -50%);
+          position: absolute;
+          display: block;
+          width: 100%;
+
+          .tab-group {
+            width: 100%;
+            border-radius: 10px;
+            height: 60px;
+            position: relative;
+
+            .tab-cont {
+              width: 100%;
+              width: 0px;
+
+              .cont {
+                width: 100vw;
+                padding: 10px 50px;
+                display: flex;
+                justify-content: flex-end;
+
+                // background-color: #fff;
+                .div_1 {
+                  display: none;
+                }
+
+                .div_2 {
+                  width: 300px;
+                  padding: 10px;
+                  background-color: #fff;
+                  border-radius: 10px;
+                  height: 50px;
+                  display: flex;
+                  // justify-content: center;
+                  position: relative;
+
+                  .icon {
+                    a {
+                      &::after {
+                        position: absolute;
+                        content: "";
+                        width: 25px;
+                        height: 25px;
+                        transform: rotate(45deg);
+                        left: 90%;
+                        top: 18%;
+                        object-position: center;
+                        background-image: url("data:image/svg+xml,%3Csvg width='227' height='226' viewBox='0 0 227 226' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M112.998 225.359C175.051 225.359 225.355 175.055 225.355 113.002C225.355 50.9485 175.051 0.644531 112.998 0.644531C50.9446 0.644531 0.640625 50.9485 0.640625 113.002C0.640625 175.055 50.9446 225.359 112.998 225.359Z' fill='black' stroke='%23000001' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M113.357 225.359C175.41 225.359 225.714 175.055 225.714 113.002C225.714 50.9485 175.41 0.644531 113.357 0.644531C51.304 0.644531 1 50.9485 1 113.002C1 175.055 51.304 225.359 113.357 225.359Z' fill='black' stroke='%23000001' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M74 88L113 43L152 88' fill='black'/%3E%3Cpath d='M74 88L113 43L152 88' stroke='white' stroke-width='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M113 46V180' stroke='white' stroke-width='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+                        background-size: cover;
+                      }
+                    }
+                  }
+
+                  p {
+                    display: none;
+                  }
+
+                  em {
+                    display: none;
+                  }
+
+                  img {
+                    display: none;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+
+
+@media (max-width: 900px) {
   #section5 {
     h2 {
       display: none;
