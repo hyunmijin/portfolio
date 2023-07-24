@@ -32,29 +32,11 @@
       flex-wrap: wrap;
       width: 400vh;
 
-      .button1 {
+      a {
         position: absolute;
         left: 5%;
         bottom: 42%;
-        font-size: 14px;
-        background-color: #fff;
-        display: inline-block;
-        border-radius: 100px;
-        padding: 10px 20px;
-        // margin-top: 10px;
-        color: #000;
-        cursor: pointer;
-
-        &:hover {
-          background-color: #000;
-          color: #fff;
-        }
-      }
-      .button2 {
-        position: absolute;
-        left: 5%;
-        bottom: 35%;
-        font-size: 14px;
+        font-size: 20px;
         background-color: #fff;
         display: inline-block;
         border-radius: 100px;
@@ -142,7 +124,9 @@
 
 @media (max-width: 1600px) {
   #section3 {
+
     .sec3-cont {
+
       h3 {
         font-size: 25px;
       }
@@ -156,6 +140,7 @@
 
         .site {
           .right {
+
             img {
               width: 380px;
               position: absolute;
@@ -169,11 +154,13 @@
             margin-top: 40px;
             font-weight: bold;
           }
+
         }
       }
     }
   }
 }
+
 
 @media (max-width: 900px) {
   #section3 {
@@ -209,13 +196,13 @@
           }
 
           .left {
+
             p {
               font-size: 14px;
             }
           }
 
-          &div {
-          }
+          &div {}
 
           h4 {
             font-size: 24px;
@@ -229,6 +216,7 @@
       }
     }
   }
+
 }
 
 @media (max-width: 550px) {
@@ -239,6 +227,7 @@
       }
     }
   }
+
 }
 
 @media (max-width: 420px) {
@@ -275,13 +264,13 @@
           }
 
           .left {
+
             p {
               font-size: 14px;
             }
           }
 
-          &div {
-          }
+          &div {}
 
           h4 {
             font-size: 24px;
@@ -295,4 +284,5 @@
       }
     }
   }
+
 }
