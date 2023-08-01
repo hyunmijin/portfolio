@@ -31,6 +31,16 @@
       display: flex;
       flex-wrap: wrap;
       width: 400vh;
+      .right {
+        margin-top: -170px;
+        display: flex;
+        justify-content: right;
+        width: 100%;
+
+        img {
+          width: 70%;
+        }
+      }
 
       .button1 {
         position: absolute;
@@ -96,19 +106,10 @@
           background-color: #f9b16e;
         }
 
-        .right {
-          width: 50%;
-
-          img {
-            width: 540px;
-            position: absolute;
-            left: 200px;
-            bottom: 80px;
-          }
-        }
+        
 
         .left {
-          width: 50%;
+          width: 60%;
           color: #fff;
 
           p {
@@ -161,14 +162,6 @@
         }
 
         .site {
-          .right {
-            img {
-              width: 380px;
-              position: absolute;
-              left: 160px;
-              bottom: 25px;
-            }
-          }
 
           //수정
           h4 {
@@ -206,13 +199,6 @@
           height: 100vh;
           padding: 40px;
 
-          .right {
-            img {
-              width: 250px;
-              left: 170px;
-              bottom: 120px;
-            }
-          }
 
           .left {
             p {
@@ -220,8 +206,6 @@
             }
           }
 
-          &div {
-          }
 
           h4 {
             font-size: 24px;
@@ -272,13 +256,7 @@
           height: 100vh;
           padding: 40px;
 
-          .right {
-            img {
-              width: 250px;
-              left: 170px;
-              bottom: 120px;
-            }
-          }
+
 
           .left {
             p {
@@ -286,8 +264,6 @@
             }
           }
 
-          &div {
-          }
 
           h4 {
             font-size: 24px;

@@ -66,14 +66,13 @@
         }
 
         .right {
-          width: 50%;
+          display: flex;
+          justify-content: right;
+          transform: translate(-30%, -75%);
+          width: 100%;
 
           img {
-            width: 800px;
-            position: absolute;
-            left: 50%;
-            bottom: -40%;
-            transform: translate(-50%, -50%);
+            width: 40%;
           }
         }
 
