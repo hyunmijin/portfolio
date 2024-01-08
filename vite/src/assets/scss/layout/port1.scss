@@ -7,7 +7,7 @@
 
   h2 {
     width: 20%;
-    height: 60px;
+    // height: 60px;
     margin-left: 20%;
     background-color: #ffeba5;
     padding: 15px 0px 15px 40px;
@@ -30,7 +30,8 @@
       // display: none;
       display: flex;
       flex-wrap: wrap;
-      width: 400vh;
+      width: 700vh;
+      margin-left: 100px;
       .right {
         margin-top: -170px;
         display: flex;
